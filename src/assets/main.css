@@ -1,2 +1,30 @@
 @import './base.css';
 
+* { box-sizing: border-box; }
+
+html { 
+  scroll-behavior: smooth;
+  color: var(--dark);
+  background-color: var(--light);
+  font-family: "Open Sans", serif;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 48px; }
+h3 { font-size: 28px; }
+
+h1, h2, h3 { font-family: "Patrick Hand", serif; }
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+section {
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+.bg-section {
+  
+}
