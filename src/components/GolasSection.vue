@@ -22,13 +22,13 @@
         </div>
       </div>
       <div class="goal-column">
-        <img src="/irogep.jpg" alt="írógép">
+        <img src="/irogep.webp" alt="írógép">
       </div>
     </div>
 
     <div class="goal-row second-row">
       <div class="goal-column">
-        <img src="/tanulas_vagott.jpg" alt="írógép">
+        <img src="/tanulas_vagott.webp" alt="írógép">
       </div>
       <div class="goal-column">
         <div class="goal-container">
@@ -57,33 +57,30 @@
 
 <style scoped>
 .goal-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display:          flex;
+  flex-direction:   row;
+  justify-content:  center;
+  align-items:      center;
 }
 
-.second-row {
-  margin-top: 100px;
-}
+.second-row { margin-top: 100px; }
 
 .goal-container {
-  width: 70%;
+  width:  70%;
   margin: 0 auto;
 }
 
-.goal-title {
-  margin: 60px 0;
-}
+.goal-title { margin: 60px 0; }
 
 .content {
-  font-size: 18px;
-  line-height: 2;
-  margin: 30px 0;
+  font-size:    18px;
+  line-height:  2;
+  margin:       30px 0;
 }
 
 img {
-  height: 550px;
-  margin: 20px;
+  height:         550px;
+  margin:         20px;
+  border-radius:  10px;
 }
 </style>

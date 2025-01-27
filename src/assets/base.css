@@ -1,7 +1,7 @@
 :root {
   --light: hsl(0, 0%, 93%);
   --dark: hsl(216, 18%, 16%);
-  --section-bg: hsl(183, 100%, 35%);
+  --section-bg: #00ADB5;
   --prices-orange: hsl(37, 100%, 68%);
   --prices-red: hsl(348, 56%, 61%);
 }

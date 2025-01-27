@@ -3,19 +3,19 @@
   <div class="blur-layer">
     <div class="index-wrapper">
       <div class="index-container">
-        <img src="/kucko-logo-jo.png" alt="kuckó logó" class="index-logo">
+        <img src="/kucko-logo-jo.webp" alt="kuckó logó" class="index-logo">
         <h1 class="title">Tanulás könnyedén, együtt!</h1>
         <div class="slogans-wrapper">
           <div class="slogan">
-            <img src="/sticker3.svg" alt="matek">
+            <img src="/sticker3.webp" alt="matek">
             <h1 class="slogan-title">Tanulás</h1>
           </div>
           <div class="slogan">
-            <img src="/sticker1.svg" alt="rajzolós">
+            <img src="/sticker1.webp" alt="rajzolós">
             <h1 class="slogan-title">Játék</h1>
           </div>
           <div class="slogan">
-            <img src="/sticker2.svg" alt="siker">
+            <img src="/sticker2.webp" alt="siker">
             <h1 class="slogan-title">Siker</h1>
           </div>
         </div>
@@ -41,7 +41,7 @@
   position:         relative;
   height:           100%;
   width:            100%;
-  background-image: url("/index_hatter.jpg");
+  background-image: url("/index_hatter.webp");
   background-size:  cover;
 }
 

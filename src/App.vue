@@ -6,6 +6,9 @@ import WaitingForSection from './components/WaitingForSection.vue'
 import PricesSection from './components/PricesSection.vue'
 import WhoWeAreSection from './components/WhoWeAreSection.vue'
 import ContactsSession from './components/ContactsSection.vue'
+import AdmissionSection from './components/AdmissionSection.vue'
+import TheySaidSection from './components/TheySaidSection.vue'
+import GalerySection from './components/GalerySection.vue'
 </script>
 
 <template>
@@ -20,10 +23,11 @@ import ContactsSession from './components/ContactsSection.vue'
         <ul class="menu-list">
           <li><a href="#hero">kezdőlap</a></li>
           <li><a href="#goals">céljaink</a></li>
-          <li><a href="">kiket várunk</a></li>
-          <li><a href="">árak</a></li>
-          <li><a href="">kik vagyunk</a></li>
-          <li><a href="">elérhetőségek</a></li>
+          <li><a href="#waiting-for">kiket várunk</a></li>
+          <li><a href="#who-we-are">kik vagyunk</a></li>
+          <li><a href="#prices">árak</a></li>
+          <li><a href="#admission">felvételi</a></li>
+          <li><a href="#contacts">elérhetőségek</a></li>
         </ul>
       </nav>
     </div>
@@ -33,6 +37,13 @@ import ContactsSession from './components/ContactsSection.vue'
     <HeroSection />
     <GoalsSection />
     <AmbitionSection />
+    <WaitingForSection />
+    <WhoWeAreSection />
+    <GalerySection />
+    <TheySaidSection />
+    <AdmissionSection />
+    <PricesSection />
+    <ContactsSession />
   </main>
 </template>
 
