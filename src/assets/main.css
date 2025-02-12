@@ -2,15 +2,15 @@
 
 * { box-sizing: border-box; }
 
-html { 
-  scroll-behavior: smooth;
+html { scroll-behavior: smooth; }
+
+body { 
   color: var(--dark);
   background-color: var(--light);
   font-family: "Open Sans", serif;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 3rem; }
+h1, h2 { font-size: 3rem; }
 h3 { font-size: 1.75rem; }
 
 h1, h2, h3 { font-family: "Patrick Hand", serif; }
@@ -22,12 +22,12 @@ a {
 
 section {
   max-width: 1200px;
-  margin: 80px auto;
+  margin: 50px auto;
   line-height: 1.5;
 }
 
 .section-title {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   text-align: center;
 }
 

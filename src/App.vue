@@ -9,6 +9,7 @@ import ContactsSession from './components/ContactsSection.vue'
 import AdmissionSection from './components/AdmissionSection.vue'
 import TheySaidSection from './components/TheySaidSection.vue'
 import GalerySection from './components/GalerySection.vue'
+import RoomRentalSection from './components/RoomRentalSection.vue'
 </script>
 
 <template>
@@ -27,11 +28,33 @@ import GalerySection from './components/GalerySection.vue'
           <li><a href="#who-we-are">kik vagyunk</a></li>
           <li><a href="#prices">árak</a></li>
           <li><a href="#admission">felvételi</a></li>
+          <li><a href="#roomrental">terembérlés</a></li>
           <li><a href="#contacts">elérhetőségek</a></li>
         </ul>
       </nav>
     </div>
+    <div class="mobile-menu-btn">
+      <img @click="navi()" :class="{ 'mobile-menu-close': mobileMenuOpen }" class="menu-open" src="/menu-open.svg" alt="menü nyitó gomb">
+      <img @click="navi()" :class="{ 'mobile-menu-open': mobileMenuOpen }" class="menu-close" src="/menu-close.svg" alt="menü záró gomb">
+    </div>
   </header>
+
+  <Transition>
+    <div class="mobile-nav">
+      <div class="mobile-wrapper">
+        <ul class="mobile-menu-list">
+          <li><a href="#hero">kezdőlap</a></li>
+          <li><a href="#goals">céljaink</a></li>
+          <li><a href="#waiting-for">kiket várunk</a></li>
+          <li><a href="#who-we-are">kik vagyunk</a></li>
+          <li><a href="#prices">árak</a></li>
+          <li><a href="#admission">felvételi</a></li>
+          <li><a href="#roomrental">terembérlés</a></li>
+          <li><a href="#contacts">elérhetőségek</a></li>
+        </ul>
+      </div>
+    </div>
+  </Transition>
 
   <main>
     <HeroSection />
@@ -41,13 +64,85 @@ import GalerySection from './components/GalerySection.vue'
     <WhoWeAreSection />
     <GalerySection />
     <TheySaidSection />
-    <AdmissionSection />
     <PricesSection />
+    <AdmissionSection />
+    <RoomRentalSection />
     <ContactsSession />
   </main>
+
+  <footer>
+    <div>
+      <img src="/intersecting-wave-layers.webp" alt="Separator" class="separator-img-top">
+    </div>
+    <div class="footer-wrapper">
+      <p>Copyright © 2025 Kuckó tanulószoba| Powered by <a href="http://www.draszon.com">Peter</a></p>
+      <p><a href="#">ÁSZF</a> <a href="#">Adatvédelmi nyilatkozat</a></p>
+    </div>
+  </footer>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+
+  }
+}
+</script>
+
 <style scoped>
+/* MOBILE MENU */
+
+.mobile-nav {
+  z-index:            1;
+  background-color:   hsla(0, 0%, 93%, 68%);
+  position:           fixed;
+  top:                80px;
+  right:              0;
+  width:              300px;
+  border-radius: 0 0 0 10px;
+}
+
+.mobile-menu-list li {
+  padding:        20px 40px;
+  cursor:         pointer;
+  text-transform: uppercase;
+  font-family:    "Patrick Hand", serif;
+  font-size:      1.125rem;
+  border-bottom:  1px solid hsla(0, 0%, 27%, 0.199);
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu-btn img {
+  position:   fixed;
+  height:     40px;
+  right:      20px;
+  top:        20px;
+}
+
+.mobile-menu {
+  z-index:            1;
+  background-color:   var(--section-light-bg);
+  font-weight:        500;
+  width:              100%;
+  position:           fixed;
+  top:                60px;
+  display:            flex;
+  flex-direction:     column;
+  height:             0;
+  transition:         .2s;
+  overflow:           hidden;
+}
+
+/* ----------- */
+
 /* HEADER */
 header {
   z-index:          100;
@@ -62,8 +157,8 @@ header {
 }
 
 .header-wrapper {
-  width:            1200px;
-  margin:           0 auto;
+  width:            100%;
+  margin:           0 20px;
   display:          flex;
   flex-wrap:        nowrap;
   justify-content:  space-between;
@@ -108,6 +203,19 @@ nav {
 
 
 /* FOOTER */
+
+.footer-wrapper {
+  background-color: var(--section-bg);
+  height:           100px;
+  display:          flex;
+  flex-direction:   column;
+  align-items:      center;
+  justify-content:  center;
+}
+
+.footer-wrapper p { margin-bottom: 10px; }
+
+footer a { margin: 0 10px; }
 
 /* ---- */
 </style>

@@ -2,9 +2,12 @@
 <section id="they-said">
   <h1 class="section-title">Rólunk mondták</h1>
   <div class="text">
-    <p>Azt mondta ma az egyik tanítványom, hogy "Timi,
-    régebben nem értettem a geometriát, de mióta hozzád járok, már
-    tudom!" - Ennél szebb dicséret nem is kell egy matektanárnak!</p>
+    <p>
+      Azt mondta ma az egyik tanítványom, hogy "Timi,
+      régebben nem értettem a geometriát, de mióta hozzád járok, már
+      tudom!" - Ennél szebb dicséret nem is kell egy matektanárnak!
+    </p>
+    <p>- Anna</p>
     
     <svg class="quotation" fill="rgba(34, 40, 49, 11%)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
       	 width="800px" height="800px" viewBox="0 0 349.078 349.078"
@@ -29,7 +32,9 @@
 <style scoped>
 .text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 

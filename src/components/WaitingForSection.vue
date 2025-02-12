@@ -1,5 +1,5 @@
 <template>
-<section id="waiting-for">
+<section>
   <div class="waiting-for-wrapper">
     <h1 class="section-title">Kiket várunk</h1>
     <p class="text">Tanulószobánkba általános iskola felső tagozatos
@@ -15,7 +15,7 @@
       A könyveket és a füzeteket a tanulószobában is lehet hagyni,
       így mindig kéznél vannak.
     </p>
-    <p class="text">
+    <p class="text" id="who-we-are">
       Ha mindezzel készen vagyunk, lazítunk, pihenünk (társasjáték,
       beszélgetés, testmozgás, stb.).
     </p>

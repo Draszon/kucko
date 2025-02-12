@@ -27,7 +27,7 @@
   </section>
 </div>
 
-<div>
+<div id="waiting-for">
   <img src="/intersecting-wave-layers.webp" alt="Separator" class="separator-img-bottom">
 </div>
 </template>
@@ -42,7 +42,7 @@
 
 section {
   margin:     0 auto;
-  padding:    5rem 0;
+  padding:    2rem 0;
   text-align: center;
 }
 

@@ -1,5 +1,5 @@
 <template>
-<section id="who-we-are">
+<section>
 <h1 class="section-title">Kik vagyunk?</h1>
 
 <div class="wrapper">
