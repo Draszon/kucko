@@ -17,57 +17,58 @@ import RoomRentalSection from './components/RoomRentalSection.vue'
     <div class="header-wrapper">
       <div class="logo-wrapper">
         <img class="logo" src="/ures-haz.png" alt="üres ház logó">
-        <h3 class="logo-text">kuckó tanulószoba</h3>
+        <h3 class="logo-text" v-if="data">{{ data.name }}</h3>
       </div>
 
       <nav>
-        <ul class="menu-list">
-          <li><a href="#hero">kezdőlap</a></li>
-          <li><a href="#goals">céljaink</a></li>
-          <li><a href="#waiting-for">kiket várunk</a></li>
-          <li><a href="#who-we-are">kik vagyunk</a></li>
-          <li><a href="#prices">árak</a></li>
-          <li><a href="#admission">felvételi</a></li>
-          <li><a href="#roomrental">terembérlés</a></li>
-          <li><a href="#contacts">elérhetőségek</a></li>
+        <ul class="menu-list" v-if="data">
+          <li><a href="#hero">{{ data.menu.home }}</a></li>
+          <li><a href="#goals">{{ data.menu.goals }}</a></li>
+          <li><a href="#waiting-for">{{ data.menu.waiting }}</a></li>
+          <li><a href="#who-we-are">{{ data.menu.whoWeAre }}</a></li>
+          <li><a href="#prices">{{ data.menu.prices }}</a></li>
+          <li><a href="#admission">{{ data.menu.admission }}</a></li>
+          <li><a href="#roomrental">{{ data.menu.roomRental }}</a></li>
+          <li><a href="#contacts">{{ data.menu.contacts }}</a></li>
         </ul>
       </nav>
     </div>
+
     <div class="mobile-menu-btn">
-      <img @click="navi()" :class="{ 'mobile-menu-close': mobileMenuOpen }" class="menu-open" src="/menu-open.svg" alt="menü nyitó gomb">
-      <img @click="navi()" :class="{ 'mobile-menu-open': mobileMenuOpen }" class="menu-close" src="/menu-close.svg" alt="menü záró gomb">
+      <img @click="navi()" :class="{ 'mobile-menu-open': mobileMenuOpen }" src="/menu-open.svg" alt="menü nyitó gomb">
+      <img @click="navi()" src="/menu-close.svg" alt="menü záró gomb">
     </div>
   </header>
 
   <Transition>
-    <div class="mobile-nav">
+    <div class="mobile-nav" :class="{ 'mobile-open': mobileMenuOpen, 'mobile-close': !mobileMenuOpen }">
       <div class="mobile-wrapper">
-        <ul class="mobile-menu-list">
-          <li><a href="#hero">kezdőlap</a></li>
-          <li><a href="#goals">céljaink</a></li>
-          <li><a href="#waiting-for">kiket várunk</a></li>
-          <li><a href="#who-we-are">kik vagyunk</a></li>
-          <li><a href="#prices">árak</a></li>
-          <li><a href="#admission">felvételi</a></li>
-          <li><a href="#roomrental">terembérlés</a></li>
-          <li><a href="#contacts">elérhetőségek</a></li>
+        <ul class="mobile-menu-list" v-if="data">
+          <li><a @click="navi" href="#hero">{{ data.menu.home }}</a></li>
+          <li><a @click="navi" href="#goals">{{ data.menu.goals }}</a></li>
+          <li><a @click="navi" href="#waiting-for">{{ data.menu.waiting }}</a></li>
+          <li><a @click="navi" href="#who-we-are">{{ data.menu.whoWeAre }}</a></li>
+          <li><a @click="navi" href="#prices">{{ data.menu.prices }}</a></li>
+          <li><a @click="navi" href="#admission">{{ data.menu.admission }}</a></li>
+          <li><a @click="navi" href="#roomrental">{{ data.menu.roomRental }}</a></li>
+          <li><a @click="navi" href="#contacts">{{ data.menu.contacts }}</a></li>
         </ul>
       </div>
     </div>
   </Transition>
 
-  <main>
-    <HeroSection />
-    <GoalsSection />
-    <AmbitionSection />
-    <WaitingForSection />
-    <WhoWeAreSection />
-    <GalerySection />
-    <TheySaidSection />
-    <PricesSection />
-    <AdmissionSection />
-    <RoomRentalSection />
-    <ContactsSession />
+  <main v-if="data">
+    <HeroSection :hero="data?.hero" />
+    <GoalsSection :goals="data?.goals" />
+    <AmbitionSection :ambitions="data?.ambitions" />
+    <WaitingForSection :waitingfor="data?.waitingfor" />
+    <WhoWeAreSection :whoWeAre="data?.whoWeAre" />
+    <GalerySection :galery="data?.galery" />
+    <TheySaidSection :theySaid="data?.theySaid" />
+    <PricesSection :prices="data?.prices" />
+    <AdmissionSection :admission="data?.admission" />
+    <RoomRentalSection :roomRental="data?.roomRental" />
+    <ContactsSession :contacts="data?.contacts" />
   </main>
 
   <footer>
@@ -75,7 +76,7 @@ import RoomRentalSection from './components/RoomRentalSection.vue'
       <img src="/intersecting-wave-layers.webp" alt="Separator" class="separator-img-top">
     </div>
     <div class="footer-wrapper">
-      <p>Copyright © 2025 Kuckó tanulószoba| Powered by <a href="http://www.draszon.com">Peter</a></p>
+      <p>Copyright © <span>{{ date }}</span> Kuckó tanulószoba| Powered by <a href="http://www.draszon.com">Peter</a></p>
       <p><a href="#">ÁSZF</a> <a href="#">Adatvédelmi nyilatkozat</a></p>
     </div>
   </footer>
@@ -85,26 +86,42 @@ import RoomRentalSection from './components/RoomRentalSection.vue'
 export default {
   data() {
     return {
-
+      mobileMenuOpen: false,
+      date: new Date().getFullYear(),
+      data: null
     }
   },
   methods: {
-
+    navi() {
+      this.mobileMenuOpen = !this.mobileMenuOpen;
+    },
+    async fetchData() {
+      try {
+        const response = await fetch('/content.json');
+        this.data = await response.json();
+      } catch (error) {
+        console.log("Hiba a tartalom betöltése közben!", error);
+      }
+    }
+  },
+  async mounted() {
+    await this.fetchData();
   }
 }
 </script>
 
 <style scoped>
 /* MOBILE MENU */
-
 .mobile-nav {
   z-index:            1;
   background-color:   hsla(0, 0%, 93%, 68%);
+  backdrop-filter:    blur(10px);
   position:           fixed;
   top:                80px;
   right:              0;
-  width:              300px;
-  border-radius: 0 0 0 10px;
+  width:              0;
+  border-radius:      0 0 0 10px;
+  transition:         all .3s;
 }
 
 .mobile-menu-list li {
@@ -116,9 +133,7 @@ export default {
   border-bottom:  1px solid hsla(0, 0%, 27%, 0.199);
 }
 
-.mobile-menu-btn {
-  display: none;
-}
+.mobile-menu-btn { display: none; }
 
 .mobile-menu-btn img {
   position:   fixed;
@@ -127,19 +142,11 @@ export default {
   top:        20px;
 }
 
-.mobile-menu {
-  z-index:            1;
-  background-color:   var(--section-light-bg);
-  font-weight:        500;
-  width:              100%;
-  position:           fixed;
-  top:                60px;
-  display:            flex;
-  flex-direction:     column;
-  height:             0;
-  transition:         .2s;
-  overflow:           hidden;
-}
+.mobile-menu-open { display: none; }
+.mobile-menu-close { display: block; }
+
+.mobile-open { width: 300px !important; }
+.mobile-close { width: 0 !important; }
 
 /* ----------- */
 
@@ -153,7 +160,6 @@ header {
   align-items:      center;
   position:         fixed;
   backdrop-filter:  blur(10px);
-  border-bottom:    1px solid hsl(0, 0%, 80%);
 }
 
 .header-wrapper {
@@ -218,4 +224,13 @@ nav {
 footer a { margin: 0 10px; }
 
 /* ---- */
+
+@media (max-width: 1024px) {
+  nav { display: none; }
+  .mobile-menu-btn { display: block; }
+}
+
+@media (max-width: 425px) {
+  footer p { text-align: center; }
+}
 </style>

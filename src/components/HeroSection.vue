@@ -4,19 +4,19 @@
     <div class="index-wrapper">
       <div class="index-container">
         <img src="/kucko-logo-jo.webp" alt="kuckó logó" class="index-logo">
-        <h1 class="title">Tanulás könnyedén, együtt!</h1>
+        <h1 class="title">{{ hero.title }}</h1>
         <div class="slogans-wrapper">
           <div class="slogan">
             <img src="/sticker3.webp" alt="matek">
-            <h1 class="slogan-title">Tanulás</h1>
+            <h1 class="slogan-title">{{ hero.study }}</h1>
           </div>
           <div class="slogan">
             <img src="/sticker1.webp" alt="rajzolós">
-            <h1 class="slogan-title">Játék</h1>
+            <h1 class="slogan-title">{{ hero.game }}</h1>
           </div>
           <div class="slogan">
             <img src="/sticker2.webp" alt="siker">
-            <h1 class="slogan-title">Siker</h1>
+            <h1 class="slogan-title">{{ hero.success }}</h1>
           </div>
         </div>
       </div>
@@ -26,6 +26,14 @@
 </template>
 
 <script>
+export default {
+  props: {
+    hero: {
+      type: Object,
+      required: true
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -56,16 +64,16 @@
 .index-container {
   max-width:        1200px;
   height:           100%;
-  margin:           20px auto;
+  margin:           0 auto;
   display:          flex;
   flex-direction:   column;
   align-items:      center;
   justify-content:  center;
 }
 
-.index-logo { width: 350px; }
+.index-logo { width: 300px; }
 
-.title { margin: 50px 20px; }
+.title { margin: 30px 20px; }
 
 .slogans-wrapper {
   width:            100%;
@@ -77,4 +85,10 @@
 .slogan img { width: 190px; }
 
 .slogan-title { text-align: center; }
+
+@media (max-width: 425px) {
+  .slogans-wrapper { flex-direction: row; }
+  .slogan img { width: 90px; }
+  .index-logo { width: 300px; }
+}
 </style>

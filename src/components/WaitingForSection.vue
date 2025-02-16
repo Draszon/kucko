@@ -1,33 +1,32 @@
 <template>
 <section>
   <div class="waiting-for-wrapper">
-    <h1 class="section-title">Kiket várunk</h1>
-    <p class="text">Tanulószobánkba általános iskola felső tagozatos
-      tanulókat várunk, hétfőtől péntekig 13.30-tól 16.00-ig
-      biztosítjuk a felügyeletüket. Igény szerint ettől el tudunk
-      térni.
-    </p>
-    <p class="text">
-      Ez idő alatt elkészítjük az írásbeli házi feladatokat, mindenki
-      megtanulja a szóbeli feladatokat, amit aztán ki is kérdezünk a
-      gyerekektől. Ha szükségesnek érezzük, akkor még gyakoroljuk az
-      anyagot. Majd bepakoljuk a tanszereket a következő napra.
-      A könyveket és a füzeteket a tanulószobában is lehet hagyni,
-      így mindig kéznél vannak.
-    </p>
-    <p class="text" id="who-we-are">
-      Ha mindezzel készen vagyunk, lazítunk, pihenünk (társasjáték,
-      beszélgetés, testmozgás, stb.).
-    </p>
+    <h1 class="section-title">{{ waitingfor.title }}</h1>
+    <p class="text">{{ waitingfor.firstSection }}</p>
+    <p class="text">{{ waitingfor.secondSection }}</p>
+    <p class="text" id="who-we-are">{{ waitingfor.thirdSection }}</p>
   </div>
 </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    waitingfor: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
 
 <style scoped>
 .text {
   font-size: 18px;
   margin: 20px 0;
+}
+
+@media (max-width: 1024px) {
+  .waiting-for-wrapper { margin: 20px; }
 }
 </style>

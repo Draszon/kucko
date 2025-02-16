@@ -46,6 +46,7 @@
   flex-direction:   row;
   align-items:      center;
   justify-content:  space-around;
+  flex-wrap:        nowrap;
 }
 
 .text-wrapper { width: 600px; }
@@ -58,4 +59,17 @@ img {
 p, h3{ margin-bottom: 30px; }
 
 .introduction, .prices { font-weight: 600; }
+
+@media (max-width: 1024px) {
+  .admission-wrapper { margin: 0 20px }
+}
+
+@media (max-width: 768px) {
+  .img-wrapper img { width: 300px; margin-left: 10px; }
+}
+
+@media (max-width: 425px) {
+  .admission-wrapper { flex-wrap: wrap; }
+  .img-wrapper img { width: 280px; margin: 0; }
+}
 </style>

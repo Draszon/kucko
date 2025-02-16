@@ -3,7 +3,7 @@
   <h1 class="section-title">Elérhetőségek</h1>
   <div class="contacts-wrapper">
     <div class="img-wrapper">
-      <img class="map" src="/map.webp" alt="google maps">
+      <a href="https://maps.app.goo.gl/Do6ybc74zfEqt1bK8" target="_blank"><img class="map" src="/map.webp" alt="google maps"></a>
     </div>
 
     <div class="text-wrapper">
@@ -66,5 +66,25 @@
   align-items:    center;
   gap:            1.25rem;
   margin-bottom:  20px;
+}
+
+@media (max-width: 1024px) {
+  .contacts-wrapper { margin: 0 20px; }
+  .img-wrapper img { height: 300px; }
+}
+
+@media (max-width: 768px) {
+  .contacts-wrapper { flex-wrap: wrap; }
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact { width: 250px; }
+}
+
+@media (max-width: 425px) {
+  .img-wrapper img { height: 220px; }
 }
 </style>

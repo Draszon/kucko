@@ -1,6 +1,6 @@
 <template>
 <section>
-<h1 class="section-title">Kik vagyunk?</h1>
+<h1 class="section-title">{{ whoWeAre.title }}</h1>
 
 <div class="wrapper">
   <div class="img-column">
@@ -8,37 +8,27 @@
   </div>
 
   <div class="introduction-column">
-    <p class="name">Borosné Müller Tímea, Alapító</p>
+    <p class="name">{{ whoWeAre.name }}</p>
     <hr>
-    <p class="introduction">Úgy gondolom, fontos, hogy tudd kire bízod a gyermeked, ha a
-      Kuckó Tanulószobát választjátok!
-    </p>
-    <p class="text">Borosné Müller Tímea vagyok, a Kuckó Tanulószoba alapítója.
-      Az Eszterházy Károly Tanárképző Főiskolán végeztem
-      matematika-számítástechnika tanári szakon 1994-ben, majd a
-      Debreceni Egyetem informatika kiegészítőjét végeztem el. 
-      Pályafutásomat napközis nevelőként kezdtem, majd informatikát
-      és matematikát tanítottam általános- és több középiskolában is.
-      Harmadik fiam születése óta a családi vállalkozásunk tagja vagyok,
-      de mindig is visszavágytam a tanításhoz.
-    </p>
-    <p class="text">
-      Sajnos a mai közoktatásban
-      nem minden gyermek tudja megtanulni, begyakorolnia a tananyagot.
-      Ezen szeretnénk segíteni a Tanulószobánkban, ahol a gyerekekkel
-      együtt elkészítjük a házi feladatot, az esetleges lemaradásokat
-      bepótoljuk. Nem egy tantárgyból korrepetálunk, hanem szinte
-      mindenből felkészülünk. Célunk, hogy egyedül is menjen a tanulás,
-      több tanulási módszert is alkalmazunk. A folyamatos tanulás a
-      jegyeken is meglátszik.
-    </p>
-    <p class="end">Ha szeretnél gyermekeddel csatlakozni hozzánk, keress bátran!</p>
+    <p class="introduction">{{ whoWeAre.introduction }}</p>
+    <p class="text">{{ whoWeAre.firstSection }}</p>
+    <p class="text">{{ whoWeAre.secondSection }}</p>
+    <p class="end">{{ whoWeAre.thirdSection }}</p>
   </div>
 </div>
 </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    whoWeAre: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
 
 <style scoped>
 hr { border: 1px solid var(--dark); }
@@ -46,6 +36,7 @@ hr { border: 1px solid var(--dark); }
 .wrapper {
   font-size:        1.125rem;
   padding:          80px;
+  margin:           10px;
   border-radius:    10px;
   background-color: var(--section-bg);
   display:          flex;
@@ -72,5 +63,16 @@ hr { border: 1px solid var(--dark); }
 .img-column img {
   width:          150px;
   border-radius:  0.625rem;
+}
+
+@media (max-width: 768px) {
+  .introduction-column { margin-left: 20px; }
+  .wrapper { padding: 40px; }
+}
+
+@media (max-width: 425px) {
+  .wrapper { flex-direction: column; padding: 40px 20px;}
+  .img-column { text-align: center;  margin-bottom: 30px;}
+  .introduction-column { margin: 0; }
 }
 </style>

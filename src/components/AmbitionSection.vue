@@ -5,23 +5,23 @@
 
 <div class="section">
   <section>
-    <h1 class="section-title">Törekvésünk, hogy a gyerekek</h1>
+    <h1 class="section-title">{{ ambitions.title }}</h1>
     <div class="ambitions-wrapper">
       <div class="ambition">
         <img src="/studying.webp">
-        <p class="ambition-text">Megtanuljanak tanulni</p>
+        <p class="ambition-text">{{ ambitions.first }}</p>
       </div>
       <div class="ambition">
         <img src="/help.webp">
-        <p class="ambition-text">Merjenek kérdezni</p>
+        <p class="ambition-text">{{ ambitions.second }}</p>
       </div>
       <div class="ambition">
         <img src="/funy_to_study.webp">
-        <p class="ambition-text">Érezzék jól magukat tanulás közben</p>
+        <p class="ambition-text">{{ ambitions.third }}</p>
       </div>
       <div class="ambition">
         <img src="/önbizalom.webp">
-        <p class="ambition-text">Ne küzdjenek az önbizalomhiánnyal, ismerjék meg saját értékeiket, képességeiket</p>
+        <p class="ambition-text">{{ ambitions.fourth }}</p>
       </div>
     </div>
   </section>
@@ -32,7 +32,16 @@
 </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    ambitions: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
 
 <style scoped>
 .section {

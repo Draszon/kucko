@@ -1,14 +1,15 @@
 <template>
 <section id="they-said">
   <h1 class="section-title">Rólunk mondták</h1>
+  
   <div class="text">
-    <p>
-      Azt mondta ma az egyik tanítványom, hogy "Timi,
-      régebben nem értettem a geometriát, de mióta hozzád járok, már
-      tudom!" - Ennél szebb dicséret nem is kell egy matektanárnak!
-    </p>
-    <p>- Anna</p>
-    
+    <Transition name="comment" mode="out-in">
+      <div :key="commentCounter" class="text-inner">
+        <p>{{ theySaid.said[commentCounter].text }}</p>
+        <p>{{ theySaid.said[commentCounter].name }}</p>
+      </div>
+    </Transition>
+
     <svg class="quotation" fill="rgba(34, 40, 49, 11%)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
       	 width="800px" height="800px" viewBox="0 0 349.078 349.078"
       	 xml:space="preserve">
@@ -24,31 +25,114 @@
       </g>
     </svg>
   </div>
+  
 </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    theySaid: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+    return {
+      commentCounter: 0,
+      intervalId: null
+    }
+  },
+  methods: {
+    counter() {
+      if (this.commentCounter === this.theySaid.said.length - 1) {
+        this.commentCounter = 0;
+      } else {
+        this.commentCounter++;
+      }
+    },
+    startCounter() {
+      if (!this.intervalId) {
+        this.intervalId = setInterval(this.counter, 15000);
+      }
+    }
+  },
+  mounted() {
+    this.startCounter();
+  }
+}
+</script>
 
 <style scoped>
+.comment-enter-active,
+.comment-leave-active {
+  transition: all 0.5s ease-out;
+}
+
+.comment-enter-from {
+  opacity:    0;
+  transform:  translateX(-100px);
+}
+
+.comment-enter-to,
+.comment-leave-from {
+  opacity:    1;
+  transform:  translateX(0);
+}
+
+.comment-leave-to {
+  opacity:    0;
+  transform:  translateX(100px);
+}
+
 .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  height:           100px;
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  center;
+  align-items:      center;
+  position:         relative;
+}
+
+.text-inner {
+  height:           100%;
+  width:            100%;
+  position:         absolute;
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  center;
+  align-items:      center;
 }
 
 .text p {
-  max-width: 70%;
+  max-width:  80%;
   text-align: center;
+  font-size:  1.25rem;
 }
 
 .quotation {
-  z-index: -1;
-  width: 200px;
-  height: 200px;
+  z-index:  -1;
+  width:    200px;
+  height:   200px;
   position: absolute;
-  right: 250px;
-  top: -60px;
+  right:    250px;
+  top:      -60px;
+}
+
+@media (max-width: 768px) {
+  .text p { max-width: 95%; }
+}
+
+@media (max-width: 425px) {
+  .quotation { right: calc((425px / 2) - 100px); }
+  .text p { font-size: 1.2rem; }
+}
+
+@media (max-width: 375px) {
+  .quotation { right: calc((375px / 2) - 100px); }
+}
+
+@media (max-width: 320px) {
+  .quotation { right: calc((320px / 2) - 100px); }
 }
 </style>
