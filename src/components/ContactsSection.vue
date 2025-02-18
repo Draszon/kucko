@@ -1,43 +1,45 @@
 <template>
 <section id="contacts">
-  <h1 class="section-title">Elérhetőségek</h1>
+  <h1 class="section-title">{{ contacts.sectionTitle }}</h1>
   <div class="contacts-wrapper">
     <div class="img-wrapper">
-      <a href="https://maps.app.goo.gl/Do6ybc74zfEqt1bK8" target="_blank"><img class="map" src="/map.webp" alt="google maps"></a>
+      <a :href="contacts.mapLink" target="_blank"><img class="map" :src="contacts.mapImg" alt="google maps"></a>
     </div>
 
     <div class="text-wrapper">
-      <p class="address">Eger, Széchenyi u. 33.</p>
+      <p class="address">{{ contacts.address }}</p>
       <div class="contact">
-        <img src="/telephone.webp" alt="phone">
+        <img :src="contacts.phoneIcon" alt="phone">
         <div>
-          <p>Borosné Müller Tímea</p>
-          <p>0620/931-7207</p>
+          <p>{{ contacts.name }}</p>
+          <p>{{ contacts.phone }}</p>
         </div>
       </div>
 
       <div class="contact">
-        <img src="/facebook.webp" alt="facebook">
-        <p><a href="https://www.facebook.com/kucko.tanuloszoba">Kuckó Tanulószoba Eger</a></p>
+        <img :src="contacts.faceIcon" alt="facebook">
+        <p><a target="_blank" :href="contacts.facebookLink">{{ contacts.facebookName }}</a></p>
       </div>
 
       <div class="contact">
-        <img src="/mail.webp" alt="email">
-        <p>bmtimi@gmail.com</p>
+        <img :src="contacts.mailIcon" alt="email">
+        <p>{{ contacts.mail }}</p>
       </div>
 
-      <p>
-        A Tanulószoba több belvárosi iskola közelében található,
-        így a gyerekek könnyen, akár önállóan is eljuthatnak hozzánk.
-        A közelben helyi járatú buszmegálló is található, amely tovább
-        egyszerűsíti a megközelítést.
-      </p>
+      <p>{{ contacts.content }}</p>
     </div>
   </div>
 </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    contacts: Object,
+    required: true
+  }
+}
+</script>
 
 <style scoped>
 .contacts-wrapper {

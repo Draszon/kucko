@@ -75,8 +75,8 @@ import RoomRentalSection from './components/RoomRentalSection.vue'
     <div>
       <img src="/intersecting-wave-layers.webp" alt="Separator" class="separator-img-top">
     </div>
-    <div class="footer-wrapper">
-      <p>Copyright © <span>{{ date }}</span> Kuckó tanulószoba| Powered by <a href="http://www.draszon.com">Peter</a></p>
+    <div class="footer-wrapper" v-if="data">
+      <p>Copyright © <span>{{ date }}</span> {{ data.footer.copyright }} | Powered by <a href="http://www.draszon.com">Peter</a></p>
       <p><a href="#">ÁSZF</a> <a href="#">Adatvédelmi nyilatkozat</a></p>
     </div>
   </footer>

@@ -115,5 +115,60 @@
         "name": "- Fanni"
       }
     ]
+  },
+  "prices": {
+    "sectionTitle": "Tanszobai árak",
+    "brothers": "Testvérek esetén 3000 Ft/fő kedvezmény",
+    "priceWrapper": [
+      {
+        "title": "Heti 4 délután",
+        "firstDescription": "Rugalmas megoldás azok számára, akik más tevékenységeiket is szeretnék összehangolni",
+        "secondDescription": "Négy szabadon választott délután a héten",
+        "price": "38.000 Ft/hónap"
+      },
+      {
+        "title": "Heti 5 délután",
+        "firstDescription": "Ideális azoknak, akik rendszeres támogatást szeretnének",
+        "secondDescription": "Hétfőtől péntekig elérhető programok",
+        "thirdDescription": "Folyamatos mentorálás",
+        "price": "43.000 Ft/hónap"
+      },
+      {
+        "title": "Heti 3 délután",
+        "firstDescription": "Tökéletes választás a kezdéshez vagy kiegészítő tanuláshoz",
+        "secondDescription": "Három délután, intenzív készségfejlesztéssel",
+        "thirdDescription": "Kiemelten fókuszált tanulási program",
+        "price": "33.000 Ft/hónap"
+      }
+    ],
+    "firstP": "Ezek teljes havi díjak, a tanítási szünetek alatt is van lehetőség felzárkóztatásra. Amennyiben betegség miatt hiányzik a gyermek, adott napokon vagy délelőtt online pótolhat.",
+    "secondP": "Az első alkalom ingyenes, az első hét próbahét. Ezek után a szülőkkel fél éves megállapodást írunk, mivel hosszútávon működik jól ez a rendszer."
+  },
+  "admission": {
+    "sectionTitle": "Felvételi felkészítő nyolcadikosoknak",
+    "introduction":  "Lépj magabiztosan a középiskolába!",
+    "secondIntroduction": "A középiskolai felvételi az egyik legfontosabb mérföldkő a diákok életében. Mi azért vagyunk, hogy ezt a kihívást magabiztosan és felkészülten vegyék.",
+    "firstP": "Október elejétől a januári vizsgáig hetente egy-egy alkalommal 2x45 percben tartunk foglalkozásokat matematikából és magyar nyelvből. Szisztematikusan átismételjük az általános iskolai tananyagot, külön kitérve a felvételi feladatsorban leggyakrabban előforduló feladattípusokkal. Ilyen többek között magyarból a helyesírás, az érvelés és a szövegértés, matematikából a szöveges feladatok, a geometria, algebra, logikai feladatok.",
+    "secondP": "A felkészülés vége felé több próbafelvételit írunk, együtt kijavítjuk, megbeszéljük a megoldásokat is. A kemény munka meghozza gyümölcsét: a gyerekek magabiztosan vágnak neki az első nagy megmérettetésüknek.",
+    "prices": "Ára: tanszobásoknak 1500 FT/ 90 perc, külsősöknek 3000 FT/90 perc.",
+    "img": "/study2.webp"
+  },
+  "contacts": {
+    "sectionTitle": "Elérhetőségek",
+    "address": "Eger, Széchenyi u. 33.",
+    "name": "Borosné Müller Tímea",
+    "phone": "0620/931-7207",
+    "facebookName": "Kuckó Tanulószoba Eger",
+    "facebookLink": "https://www.facebook.com/kucko.tanuloszoba",
+    "mail": "bmtimi@gmail.com",
+    "content": "A Tanulószoba több belvárosi iskola közelében található, így a gyerekek könnyen, akár önállóan is eljuthatnak hozzánk. A közelben helyi járatú buszmegálló is található, amely tovább egyszerűsíti a megközelítést.",
+    "phoneIcon": "/telephone.webp",
+    "faceIcon": "/facebook.webp",
+    "mailIcon": "/mail.webp",
+    "mapImg": "/map.webp",
+    "mapLink": "https://maps.app.goo.gl/Do6ybc74zfEqt1bK8"
+  },
+  "footer": {
+    "copyright": "Kuckó tanulószoba"
   }
 }

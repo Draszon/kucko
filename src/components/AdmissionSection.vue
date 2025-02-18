@@ -1,44 +1,30 @@
 <template>
   <section>
-    <h1 class="section-title">Felvételi felkészítő nyolcadikosoknak</h1>
+    <h1 class="section-title">{{ admission.sectionTitle }}</h1>
     <div class="admission-wrapper">
       <div class="text-wrapper">
-        <h3>Lépj magabiztosan a középiskolába!</h3>
-        <p class="introduction">
-          A középiskolai felvételi az egyik legfontosabb mérföldkő a
-          diákok életében. Mi azért vagyunk, hogy ezt a kihívást
-          magabiztosan és felkészülten vegyék.
-        </p>
-        <p class="text">
-          Október elejétől a januári vizsgáig hetente egy-egy alkalommal
-          2x45 percben tartunk foglalkozásokat matematikából és magyar
-          nyelvből. Szisztematikusan átismételjük az általános iskolai
-          tananyagot, külön kitérve a felvételi feladatsorban
-          leggyakrabban előforduló feladattípusokkal. Ilyen többek
-          között magyarból a helyesírás, az érvelés és a szövegértés,
-          matematikából a szöveges feladatok, a geometria, algebra,
-          logikai feladatok.
-        </p>
-        <p class="text">
-          A felkészülés vége felé több próbafelvételit írunk, együtt
-          kijavítjuk, megbeszéljük a megoldásokat is. A kemény munka
-          meghozza gyümölcsét: a gyerekek magabiztosan vágnak neki az
-          első nagy megmérettetésüknek.
-        </p>
-        <p class="prices">
-          Ára: tanszobásoknak 1500 FT/ 90 perc,
-          külsősöknek 3000 FT/90 perc.
-        </p>
+        <h3>{{ admission.introduction }}</h3>
+        <p class="introduction">{{ admission.secondItroduction }}</p>
+        <p class="text">{{ admission.firstP }}</p>
+        <p class="text">{{ admission.secondP }}</p>
+        <p class="prices">{{ admission.prices }}</p>
       </div>
 
       <div class="img-wrapper">
-        <img src="/study2.webp" alt="img">
+        <img :src="admission.img" alt="img">
       </div>
     </div>
   </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    admission: Object,
+    required: true
+  }
+}
+</script>
 
 <style scoped>
 .admission-wrapper {

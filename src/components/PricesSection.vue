@@ -5,76 +5,50 @@
   
   <div class="section">
     <section>
-      <h1 class="section-title">Tanszobai árak</h1>
+      <h1 class="section-title">{{ prices.sectionTitle }}</h1>
       <div class="prices-wrapper">
         <div class="price-table four-day">
           <div class="price-content">
-            <h3 class="price-title">Heti 4 délután</h3>
+            <h3 class="price-title">{{ prices.priceWrapper[0].title }}</h3>
             <ul>
-              <li>
-                Rugalmas megoldás azok számára, akik más tevékenységeiket
-                is szeretnék összehangolni
-              </li>
-              <li>
-                Négy szabadon választott délután a héten
-              </li>
+              <li>{{ prices.priceWrapper[0].firstDescription }}</li>
+              <li>{{ prices.priceWrapper[0].secondDescription }}</li>
             </ul>
-            <p class="price"> 38.000 Ft/hónap</p>
-            <p class="discount">Testvérek esetén 3000 Ft/fő kedvezmény</p>
+            <p class="price">{{ prices.priceWrapper[0].price }}</p>
+            <p class="discount">{{ prices.brothers }}</p>
           </div>
         </div>
 
         <div class="price-table five-day">
           <div class="price-content five">
-            <h3 class="price-title">Heti 5 délután</h3>
+            <h3 class="price-title">{{ prices.priceWrapper[1].title }}</h3>
             <ul>
-              <li>
-                Ideális azoknak, akik rendszeres támogatást szeretnének
-              </li>
-              <li>
-                Hétfőtől péntekig elérhető programok
-              </li>
-              <li>
-                Folyamatos mentorálás
-              </li>
+              <li>{{ prices.priceWrapper[1].firstDescription }}</li>
+              <li>{{ prices.priceWrapper[1].secondDescription }}</li>
+              <li>{{ prices.priceWrapper[1].thirdDescription }}</li>
             </ul>
-            <p class="price"> 43.000 Ft/hónap</p>
-            <p class="discount">Testvérek esetén 3000 Ft/fő kedvezmény</p>
+            <p class="price">{{ prices.priceWrapper[1].price }}</p>
+            <p class="discount">{{ prices.brothers }}</p>
           </div>
         </div>
 
         <div class="price-table three-day">
           <div class="price-content">
-            <h3 class="price-title">Heti 3 délután</h3>
+            <h3 class="price-title">{{ prices.priceWrapper[2].title }}</h3>
             <ul>
-              <li>
-                Tökéletes választás a kezdéshez vagy kiegészítő tanuláshoz
-              </li>
-              <li>
-                Három délután, intenzív készségfejlesztéssel
-              </li>
-              <li>
-                Kiemelten fókuszált tanulási program
-              </li>
+              <li>{{ prices.priceWrapper[2].firstDescription }}</li>
+              <li>{{ prices.priceWrapper[2].secondDescription }}</li>
+              <li>{{ prices.priceWrapper[2].thirdDescription }}</li>
             </ul>
-            <p class="price"> 33.000 Ft/hónap</p>
-            <p class="discount">Testvérek esetén 3000 Ft/fő kedvezmény</p>
+            <p class="price">{{ prices.priceWrapper[2].price }}</p>
+            <p class="discount">{{ prices.brothers }}</p>
           </div>
         </div>
       </div>
 
       <div class="prices-description">
-          <p>
-            Ezek teljes havi díjak, a tanítási szünetek alatt is van
-            lehetőség felzárkóztatásra. Amennyiben betegség miatt
-            hiányzik a gyermek, adott napokon vagy délelőtt online
-            pótolhat.
-          </p>
-          <p>
-            Az első alkalom ingyenes, az első hét próbahét. Ezek után a
-            szülőkkel fél éves megállapodást írunk, mivel hosszútávon
-            működik jól ez a rendszer.
-          </p>
+          <p>{{ prices.firstP }}</p>
+          <p>{{ prices.secondP }}</p>
         </div>
     </section>
   </div>
@@ -84,7 +58,14 @@
   </div>
   </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    prices: Object,
+    required: true
+  }
+}
+</script>
 
 <style scoped>
 .section {
