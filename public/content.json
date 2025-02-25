@@ -168,6 +168,28 @@
     "mapImg": "/map.webp",
     "mapLink": "https://maps.app.goo.gl/Do6ybc74zfEqt1bK8"
   },
+  "roomRental": {
+    "sectionTitle": "Terembérlés",
+    "image": "/galery/kucko4.webp",
+    "hatUrl": "/graduate-hat.webp",
+    "bookUrl": "/open-book.webp",
+    "meetingUrl": "/meeting.webp",
+    "title": "Szeretnél egy csendes, inspiráló környezetet tanuláshoz, megbeszélésekhez vagy kisebb rendezvényekhez? ",
+    "introduction": "Termeink kényelmes és barátságos légkört biztosítanak, ahol zavartalanul koncentrálhatsz vagy együtt dolgozhatsz másokkal.",
+    "studyGroup": "Tanulócsoportok, korrepetálások – Ideális helyszín tanároknak és diákoknak",
+    "workshops": "Workshopok, tréningek – Kisebb előadásokhoz, fejlesztő foglalkozásokhoz",
+    "publicEvents": "Közösségi eseménye, szülői találkozók – Kötetlen beszélgetésekhez, közösségépítéshez",
+    "equipments": [
+      "Wi-Fi",
+      "Kényelmes asztalok és székek (variálható berendezés)",
+      "Fejlesztő társasjátékok, klíma és fűtés"
+    ],
+    "prices": [
+      "Termeink hétköznap 13 óráig vagy délután illetve hétvégente bérelhetők, melyről számlát állítunk ki.",
+      "2-4 órás bérlés esetén a bérleti díj 2000 Ft /óra. 4 órát meghaladó foglalás esetén a bérlés 1500 ft /óra.",
+      "További részletekért keress e-mailben vagy telefonon!"
+    ]
+  },
   "footer": {
     "copyright": "Kuckó tanulószoba"
   }

@@ -1,15 +1,15 @@
 <script setup>
-import HeroSection from './components/HeroSection.vue'
-import GoalsSection from './components/GolasSection.vue'
-import AmbitionSection from './components/AmbitionSection.vue'
-import WaitingForSection from './components/WaitingForSection.vue'
-import PricesSection from './components/PricesSection.vue'
-import WhoWeAreSection from './components/WhoWeAreSection.vue'
-import ContactsSession from './components/ContactsSection.vue'
-import AdmissionSection from './components/AdmissionSection.vue'
-import TheySaidSection from './components/TheySaidSection.vue'
-import GalerySection from './components/GalerySection.vue'
-import RoomRentalSection from './components/RoomRentalSection.vue'
+  import HeroSection from './components/HeroSection.vue'
+  import GoalsSection from './components/GolasSection.vue'
+  import AmbitionSection from './components/AmbitionSection.vue'
+  import WaitingForSection from './components/WaitingForSection.vue'
+  import PricesSection from './components/PricesSection.vue'
+  import WhoWeAreSection from './components/WhoWeAreSection.vue'
+  import ContactsSession from './components/ContactsSection.vue'
+  import AdmissionSection from './components/AdmissionSection.vue'
+  import TheySaidSection from './components/TheySaidSection.vue'
+  import GalerySection from './components/GalerySection.vue'
+  import RoomRentalSection from './components/RoomRentalSection.vue'
 </script>
 
 <template>
