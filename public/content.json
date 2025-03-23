@@ -147,11 +147,11 @@
   "admission": {
     "sectionTitle": "Felvételi felkészítő nyolcadikosoknak",
     "introduction":  "Lépj magabiztosan a középiskolába!",
-    "secondIntroduction": "A középiskolai felvételi az egyik legfontosabb mérföldkő a diákok életében. Mi azért vagyunk, hogy ezt a kihívást magabiztosan és felkészülten vegyék.",
+    "secondIntroduction": "A középiskolai felvételi az egyik legfontosabb mérföldkő a diákok életében. Mi azért vagyunk, hogy ezt a kihívást is magabiztosan és felkészülten vegyék.",
     "firstP": "Október elejétől a januári vizsgáig hetente egy-egy alkalommal 2x45 percben tartunk foglalkozásokat matematikából és magyar nyelvből. Szisztematikusan átismételjük az általános iskolai tananyagot, külön kitérve a felvételi feladatsorban leggyakrabban előforduló feladattípusokkal. Ilyen többek között magyarból a helyesírás, az érvelés és a szövegértés, matematikából a szöveges feladatok, a geometria, algebra, logikai feladatok.",
     "secondP": "A felkészülés vége felé több próbafelvételit írunk, együtt kijavítjuk, megbeszéljük a megoldásokat is. A kemény munka meghozza gyümölcsét: a gyerekek magabiztosan vágnak neki az első nagy megmérettetésüknek.",
     "prices": "Ára: tanszobásoknak 1500 FT/ 90 perc, külsősöknek 3000 FT/90 perc.",
-    "img": "/study2.webp"
+    "img": "/felveteli2.webp"
   },
   "contacts": {
     "sectionTitle": "Elérhetőségek",
@@ -185,8 +185,8 @@
       "Fejlesztő társasjátékok, klíma és fűtés"
     ],
     "prices": [
-      "Termeink hétköznap 13 óráig vagy délután illetve hétvégente bérelhetők, melyről számlát állítunk ki.",
-      "2-4 órás bérlés esetén a bérleti díj 2000 Ft /óra. 4 órát meghaladó foglalás esetén a bérlés 1500 ft /óra.",
+      "Termeink hétköznap 13 óráig vagy 17óra után bérelhetők.",
+      "2-4 órás bérlés esetén a bérleti díj 3000 Ft /óra. 4 órát meghaladó foglalás esetén a bérlés 2000 ft /óra. Ezekről az összegekről számlát állítunk ki!",
       "További részletekért keress e-mailben vagy telefonon!"
     ]
   },

@@ -22,8 +22,8 @@ export default {
 
 <style scoped>
 .text {
-  font-size: 18px;
-  margin: 20px 0;
+  font-size:  1.125rem;
+  margin:     20px 0;
 }
 
 @media (max-width: 1024px) {

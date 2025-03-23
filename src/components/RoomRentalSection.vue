@@ -1,9 +1,10 @@
 <template>
 <section id="roomrental">
   <h1 class="section-title">{{ roomRental.sectionTitle }}</h1>
-  <div class="first-row-wrapper">
+
+  <div class="wrapper">
     <div class="img">
-      <img :src="roomRental.image" alt="nagyterem">
+      <img class="image" :src="roomRental.image" alt="nagyterem">
     </div>
 
     <div class="introduction-wrapper">
@@ -25,9 +26,7 @@
         <p class="text">{{ roomRental.publicEvents }}</p>
       </div>
     </div>
-  </div>
 
-  <div class="second-row-wrapper">
     <div class="equipments-wrapper">
       <h3 class="equip-title">Felszereltség:</h3>
       <div class="equip-row" v-for="x in roomRental.equipments">
@@ -35,7 +34,7 @@
         <p>{{ x }}</p>
       </div>
     </div>
-
+    
     <div class="price-wrapper">
       <h3 class="price-title">Foglalás és árak:</h3>
       <div class="equipprice-row" v-for="x in roomRental.prices">
@@ -56,44 +55,39 @@ export default {
 </script>
 
 <style scoped>
-.img img {
-  width: 500px;
-  border-radius: 10px;
+.img {
+  display:      flex;
+  align-items:  center;
+}
+
+.image {
+  width:          500px;
+  border-radius:  10px;
 }
 
 .icon { width: 40px }
-.pipe { width: 23px; }
+.pipe { height: 23px; }
 
-.first-row-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
+.wrapper {
+  display:                grid;
+  grid-template-columns:  1fr 1fr;
+  gap:                    10px;
 }
 
 .rent-wrapper {
-  display: flex;
+  display:        flex;
   flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 0;
+  align-items:    center;
+  gap:            10px;
+  margin:         10px 0;
 }
 
-.introduction {
-  margin: 30px 0;
-}
-
-.second-row-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 30px;
-}
+.introduction { margin: 30px 0; }
 
 .equip-row {
-  display: flex;
+  display:        flex;
   flex-direction: row;
-  margin: 0 0 15px 20px;
+  margin:          0 0 15px 20px;
 }
 
 .equip-title, .price-title { margin-bottom: 10px; }
@@ -104,11 +98,14 @@ export default {
 
 @media (max-width: 1024px) {
   #roomrental { margin: 0 20px; }
+  .wrapper { gap: 20px; }
 }
 
 @media (max-width: 768px) {
   .first-row-wrapper,
   .second-row-wrapper {flex-direction: column; }
+  .wrapper { grid-template-columns: 1fr; }
+  .img { justify-self: center; }
 }
 
 @media (max-width: 425px) {

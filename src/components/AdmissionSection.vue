@@ -4,7 +4,7 @@
     <div class="admission-wrapper">
       <div class="text-wrapper">
         <h3>{{ admission.introduction }}</h3>
-        <p class="introduction">{{ admission.secondItroduction }}</p>
+        <p class="introduction">{{ admission.secondIntroduction }}</p>
         <p class="text">{{ admission.firstP }}</p>
         <p class="text">{{ admission.secondP }}</p>
         <p class="prices">{{ admission.prices }}</p>
@@ -44,7 +44,12 @@ img {
 
 p, h3{ margin-bottom: 30px; }
 
-.introduction, .prices { font-weight: 600; }
+.prices { font-weight: 600; }
+
+.introduction {
+  font-family:  "Patrick Hand", serif;
+  font-size:    1.25rem;
+}
 
 @media (max-width: 1024px) {
   .admission-wrapper { margin: 0 20px }
