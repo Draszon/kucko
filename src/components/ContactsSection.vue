@@ -89,4 +89,8 @@ export default {
 @media (max-width: 425px) {
   .img-wrapper img { height: 220px; }
 }
+
+@media (max-width: 320px) {
+  .img-wrapper img { height: 180px; }
+}
 </style>
