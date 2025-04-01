@@ -84,10 +84,11 @@ export default {
     align-items: center;
   }
   .contact { width: 250px; }
+  .img-wrapper img { height: 250px; }
 }
 
 @media (max-width: 425px) {
-  .img-wrapper img { height: 220px; }
+  .img-wrapper img { height: 200px; }
 }
 
 @media (max-width: 320px) {

@@ -121,6 +121,7 @@ export default {
 
 @media (max-width: 768px) {
   .text p { max-width: 95%; }
+  .quotation { right: calc((768px / 2 ) - 200px); }
 }
 
 @media (max-width: 425px) {

@@ -140,16 +140,9 @@ li { margin-bottom: 20px; }
 .prices-description { text-align: left; }
 
 @media (max-width: 1024px) {
-  .prices-wrapper { justify-content: space-around; }
-  .price-table { padding: 10px }
+  .prices-wrapper { justify-content: space-around; flex-direction: column; }
+  .price-table { padding: 10px; margin-bottom: 20px; }
   .prices-description { margin: 0 20px; }
-}
-
-@media (max-width: 768px) {
-  .prices-wrapper {
-    flex-direction: column;
-  }
-  .price-table { margin-bottom: 20px; }
 }
 
 @media (max-width: 320px) {

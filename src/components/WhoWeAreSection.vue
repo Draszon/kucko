@@ -67,12 +67,11 @@ hr { border: 1px solid var(--dark); }
 
 @media (max-width: 768px) {
   .introduction-column { margin-left: 20px; }
-  .wrapper { padding: 40px; }
+  .wrapper { flex-direction: column; padding: 40px 20px;}
+  .img-column { text-align: center;  margin-bottom: 30px;}
 }
 
 @media (max-width: 425px) {
-  .wrapper { flex-direction: column; padding: 40px 20px;}
-  .img-column { text-align: center;  margin-bottom: 30px;}
   .introduction-column { margin: 0; }
 }
 </style>

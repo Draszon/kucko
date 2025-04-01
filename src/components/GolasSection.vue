@@ -76,7 +76,7 @@ img {
   .second-row { flex-direction: column-reverse; }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .goal-column img { height: 350px; margin: 0; }
   .goal-container { width: 90%; }
 }

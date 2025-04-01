@@ -56,10 +56,6 @@ p, h3{ margin-bottom: 30px; }
 }
 
 @media (max-width: 768px) {
-  .img-wrapper img { width: 300px; margin-left: 10px; }
-}
-
-@media (max-width: 425px) {
   .admission-wrapper { flex-wrap: wrap; }
   .img-wrapper img { width: 280px; margin: 0; }
 }

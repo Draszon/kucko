@@ -132,19 +132,20 @@ export default {
   border-radius:  10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .galery img { width: 400px; }
   .img-desc-wrapper { margin: 0 !important; }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .galery-wrapper { flex-direction: row; }
   .img-desc-wrapper { flex-direction: column; }
   .galery img { width: 300px; }
   .left-arrow, .right-arrow { margin: 0 !important; }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .galery img { width: 200px; }
+  .arrow { width: 20px; }
 }
 </style>

@@ -98,17 +98,13 @@ export default {
 
 @media (max-width: 1024px) {
   #roomrental { margin: 0 20px; }
-  .wrapper { gap: 20px; }
-}
-
-@media (max-width: 768px) {
+  .wrapper { gap: 20px; grid-template-columns: 1fr; }
   .first-row-wrapper,
   .second-row-wrapper {flex-direction: column; }
-  .wrapper { grid-template-columns: 1fr; }
   .img { justify-self: center; }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .img img { max-width: 300px; }
 }
 </style>

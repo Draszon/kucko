@@ -86,6 +86,10 @@ export default {
 
 .slogan-title { text-align: center; }
 
+@media (max-width: 768px) {
+  .slogan img { width: 100px; }
+}
+
 @media (max-width: 425px) {
   .slogans-wrapper { flex-direction: row; }
   .slogan img { width: 90px; }

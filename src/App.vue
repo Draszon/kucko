@@ -76,7 +76,7 @@
       <img src="/intersecting-wave-layers.webp" alt="Separator" class="separator-img-top">
     </div>
     <div class="footer-wrapper" v-if="data">
-      <p>Copyright © <span>{{ date }}</span> {{ data.footer.copyright }} | Powered by <a href="http://www.draszon.com">Peter</a></p>
+      <p>Copyright © <span>{{ date }}</span> {{ data.footer.copyright }} | Powered by <a href="https://www.webpeter.hu">Peter</a></p>
       <p><a href="#">ÁSZF</a> <a href="#">Adatvédelmi nyilatkozat</a></p>
     </div>
   </footer>
@@ -228,9 +228,6 @@ footer a { margin: 0 10px; }
 @media (max-width: 1024px) {
   nav { display: none; }
   .mobile-menu-btn { display: block; }
-}
-
-@media (max-width: 425px) {
   footer p { text-align: center; }
 }
 </style>
