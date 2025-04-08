@@ -45,13 +45,18 @@ export default {
   color:      var(--light);
 }
 
+
 .blur-layer {
-  position:         relative;
-  height:           100%;
-  width:            100%;
+  position: relative;
+  height: 100vh;
+  width: 100%;
   background-image: url("/index_hatter.webp");
-  background-size:  cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
+
 
 .index-wrapper {
   height:           100%;

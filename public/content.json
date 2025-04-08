@@ -32,36 +32,36 @@
     "fourth": "Ne küzdjenek az önbizalomhiánnyal, ismerjék meg saját értékeiket, képességeiket"
   },
   "waitingfor": {
-    "title": "Kiket várunk",
-    "firstSection": "Tanulószobánkba általános iskola felső tagozatos tanulókat várunk, hétfőtől péntekig 13.30-tól 16.00-ig biztosítjuk a felügyeletüket. Igény szerint ettől el tudunk térni.",
+    "title": "Kiket várunk?",
+    "firstSection": "Tanulószobánkba általános iskola felső tagozatos tanulókat várunk, hétfőtől péntekig 13:30-tól 16:00-ig biztosítjuk a felügyeletüket. Igény szerint ettől el tudunk térni.",
     "secondSection": "Ez idő alatt elkészítjük az írásbeli házi feladatokat, mindenki megtanulja a szóbeli feladatokat, amit aztán ki is kérdezünk a gyerekektől. Ha szükségesnek érezzük, akkor még gyakoroljuk az anyagot. Majd bepakoljuk a tanszereket a következő napra. A könyveket és a füzeteket a tanulószobában is lehet hagyni, így mindig kéznél vannak.",
     "thirdSection": "Ha mindezzel készen vagyunk, lazítunk, pihenünk (társasjáték, beszélgetés, testmozgás, stb.)."
   },
   "whoWeAre": {
     "title": "Kik vagyunk?",
     "name": "Borosné Müller Tímea, Alapító",
-    "introduction": "Úgy gondolom, fontos, hogy tudd kire bízod a gyermeked, ha a Kuckó Tanulószobát választjátok!",
-    "firstSection": "Borosné Müller Tímea vagyok, a Kuckó Tanulószoba alapítója. Az Eszterházy Károly Tanárképző Főiskolán végeztem matematika-számítástechnika tanári szakon 1994-ben, majd a Debreceni Egyetem informatika kiegészítőjét végeztem el. Pályafutásomat napközis nevelőként kezdtem, majd informatikát és matematikát tanítottam általános- és több középiskolában is. Harmadik fiam születése óta a családi vállalkozásunk tagja vagyok, de mindig is visszavágytam a tanításhoz.",
-    "secondSection": "Sajnos a mai közoktatásban nem minden gyermek tudja megtanulni, begyakorolnia a tananyagot. Ezen szeretnénk segíteni a Tanulószobánkban, ahol a gyerekekkel együtt elkészítjük a házi feladatot, az esetleges lemaradásokat bepótoljuk. Nem egy tantárgyból korrepetálunk, hanem szinte mindenből felkészülünk. Célunk, hogy egyedül is menjen a tanulás, több tanulási módszert is alkalmazunk. A folyamatos tanulás a jegyeken is meglátszik.",
+    "introduction": "Fontos hogy tudd, kire bízod a gyermeked, ha a Kuckó Tanulószobát választjátok!",
+    "firstSection": "Borosné Müller Tímea vagyok, a Kuckó Tanulószoba alapítója. Az Eszterházy Károly Tanárképző Főiskolán végeztem matematika-számítástechnika tanári szakon 1994-ben, majd a Debreceni Egyetem informatika kiegészítőjét végeztem el. Pályafutásomat napközis nevelőként kezdtem, majd informatikát és matematikát tanítottam általános és több középiskolában is. Harmadik fiam születése óta a családi vállalkozásunk tagja vagyok, de mindig is visszavágytam a tanításhoz.",
+    "secondSection": "Sajnos a mai közoktatásban nem minden gyermek tudja megtanulni, begyakorolni a tananyagot. Ezen szeretnénk segíteni a Tanulószobánkban, ahol a gyerekekkel együtt elkészítjük a házi feladatot, az esetleges lemaradásokat bepótoljuk. Nem egy tantárgyból korrepetálunk, hanem szinte mindenből felkészülünk. Célunk, hogy egyedül is menjen a tanulás, több tanulási módszert is alkalmazunk. A folyamatos tanulás a jegyeken is meglátszik.",
     "thirdSection": "Ha szeretnél gyermekeddel csatlakozni hozzánk, keress bátran!"
   },
   "galery": {
-    "sectionTitle": "Nézz be hozzánk",
+    "sectionTitle": "Nézz be hozzánk!",
     "imgs": [
       {
         "title": "Külső tér",
         "url": "/galery/kucko1.webp",
-        "description": "A tanulószoba egy nyugodt, barátságos környezetben helyezkedik el, ahol egy kis terasz és gondozott udvar biztosítja a kellemes légkört."
+        "description": "A tanulószobához tartozik egy kis fedett terasz és gondozott udvar, ami biztosítja a szabadban a játékot. Foci, hinta a szünetekben való kikapcsolódást szolgálja."
       },
       {
         "title": "Konyha",
-        "url": "/galery/kucko2.webp",
-        "description": "A tanulószoba konyhája tágas és kényelmes, nagy asztallal és kényelmes székekkel berendezve. Mikró és vízforraló is rendelkezésre áll, így a hozott ebédet kényelmesen el lehet fogyasztani."
+        "url": "/galery/kucko5.webp",
+        "description": "A tanulószoba konyhája nagy asztallal és kényelmes székekkel van berendezve, itt is lehet tanulni. Mikró és vízforraló is rendelkezésre áll, így a hozott ebédet kényelmesen el lehet fogyasztani."
       },
       {
-        "title": "Tanulószoba",
+        "title": "Kis tanulószoba",
         "url": "/galery/kucko3.webp",
-        "description": "Ez a tágas tanulószoba több asztallal, kényelmes fotelekkel és székekkel van berendezve. A nagy ablakok rengeteg természetes fényt biztosítanak a nyugodt és hatékony tanuláshoz."
+        "description": "Ez a tágas szoba több asztallal, kényelmes fotelekkel és székekkel van berendezve. Ide tudnak különvonulni a gyerekek, ha egyénileg kell tanulniuk (pl. verset)."
       },
       {
         "title": "Nagyterem",
@@ -69,9 +69,9 @@
         "description": "A tágas nagyterem ideális nagyobb foglalkozásokhoz, csoportos munkához vagy rendezvényekhez. Sok asztal és szék áll rendelkezésre, így kényelmesen elfér mindenki."
       },
       {
-        "title": "Konyha",
+        "title": "Nagy tanulószoba",
         "url": "/galery/kucko5.webp",
-        "description": "A tanulószoba konyhája tágas és kényelmes, nagy asztallal és kényelmes székekkel berendezve. Mikró és vízforraló is rendelkezésre áll, így a hozott ebédet kényelmesen el lehet fogyasztani."
+        "description": "Ez a fő termünk, itt lehet a legtöbb gyerekkel egyszerre foglalkozni. De tanulás után akár le is lehet pihenni. Itt tartjuk a felvételi felkészítőket is."
       }
     ]
   },
@@ -80,14 +80,14 @@
     "said": [
       {
         "text": "Azt mondta ma az egyik tanítványom, hogy \"Timi, régebben nem értettem a geometriát, de mióta hozzád járok, már tudom!\" - Ennél szebb dicséret nem is kell egy matektanárnak!",
-        "name": "- Anna"
+        "name": "- Timi"
       },
       {
-        "text": "Egy jó mentor mellett mindig biztos a fejlődés! Szeret veled együtt matekozni! Szeretném megköszönni áldozatos munkátokat, ami nélkületek nem jött volna így össze!",
-        "name": "- Dóra"
+        "text": "Egy jó mentor mellett mindig biztos a fejlődés! Szeret a fiam veled együtt matekozni! Szeretném megköszönni áldozatos munkádat, ami nélkül nem jött volna össze a sikeres felvételi!",
+        "name": "- Orsolya"
       },
       {
-        "text": "Köszönjük szépen nektek a sok-sok segítséget!",
+        "text": "Köszönjük szépen a sok-sok segítséget!",
         "name": "- Levente"
       },
       {
@@ -95,11 +95,11 @@
         "name": "- Fanni"
       },
       {
-        "text": "Ámulok és bámulok mit hoztok ki belőle most 5-ben, amikor új tanárok, új tantárgyak vannak, sok dogával és feleléssel megspékelve!",
-        "name": "- Zsolt"
+        "text": "Ámulok és bámulok mit hozol ki belőle most 5-ben, amikor új tanárok, új tantárgyak vannak, sok dogával és feleléssel megspékelve!",
+        "name": "- Judit"
       },
       {
-        "text": "Szuper csapat munka amit csináltok szuper módszerekkel!",
+        "text": "Szuper csapat munka amit csináltok, szuper módszerekkel!",
         "name": "- Bence"
       },
       {
@@ -112,7 +112,7 @@
       },
       {
         "text": "Úgy örülök. Én is azt veszem észre, hogy összeszedettebb, magabiztosabb.",
-        "name": "- Fanni"
+        "name": "- István"
       }
     ]
   },
@@ -148,7 +148,7 @@
     "sectionTitle": "Felvételi felkészítő nyolcadikosoknak",
     "introduction":  "Lépj magabiztosan a középiskolába!",
     "secondIntroduction": "A középiskolai felvételi az egyik legfontosabb mérföldkő a diákok életében. Mi azért vagyunk, hogy ezt a kihívást is magabiztosan és felkészülten vegyék.",
-    "firstP": "Október elejétől a januári vizsgáig hetente egy-egy alkalommal 2x45 percben tartunk foglalkozásokat matematikából és magyar nyelvből. Szisztematikusan átismételjük az általános iskolai tananyagot, külön kitérve a felvételi feladatsorban leggyakrabban előforduló feladattípusokkal. Ilyen többek között magyarból a helyesírás, az érvelés és a szövegértés, matematikából a szöveges feladatok, a geometria, algebra, logikai feladatok.",
+    "firstP": "Október elejétől a januári vizsgáig hetente egy-egy alkalommal 2x45 percben tartunk foglalkozásokat matematikából és magyar nyelvből. Szisztematikusan átismételjük az általános iskolai tananyagot, külön kitérve a felvételi feladatsorban leggyakrabban előforduló feladattípusokra. Ilyen többek között magyarból a helyesírás, az érvelés és a szövegértés, matematikából a szöveges feladatok, a geometria, algebra, logikai feladatok.",
     "secondP": "A felkészülés vége felé több próbafelvételit írunk, együtt kijavítjuk, megbeszéljük a megoldásokat is. A kemény munka meghozza gyümölcsét: a gyerekek magabiztosan vágnak neki az első nagy megmérettetésüknek.",
     "prices": "Ára: tanszobásoknak 1500 FT/ 90 perc, külsősöknek 3000 FT/90 perc.",
     "img": "/felveteli2.webp"

@@ -53,7 +53,7 @@ export default {
     },
     startCounter() {
       if (!this.intervalId) {
-        this.intervalId = setInterval(this.counter, 15000);
+        this.intervalId = setInterval(this.counter, 8000);
       }
     }
   },
