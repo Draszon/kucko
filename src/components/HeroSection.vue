@@ -50,7 +50,7 @@ export default {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url("/index_hatter.webp");
+  background-image: url("/index_hatter1.jpeg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -62,8 +62,8 @@ export default {
   height:           100%;
   width:            100%;
   position:         absolute;
-  backdrop-filter:  blur(5px);
-  background-color: hsla(216, 18%, 16%, 30%);
+  backdrop-filter:  blur(10px);
+  background-color: hsla(216, 19%, 16%, 0.418);
 }
 
 .index-container {
