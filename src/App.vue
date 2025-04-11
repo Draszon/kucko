@@ -225,7 +225,7 @@ footer a { margin: 0 10px; }
 
 /* ---- */
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   nav { display: none; }
   .mobile-menu-btn { display: block; }
   footer p { text-align: center; }

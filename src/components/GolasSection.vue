@@ -23,10 +23,12 @@
         <div class="goal-container">
           <p class="content">{{ goals.thirdSection }}</p>
           <p class="content">{{ goals.fourthSection }}</p>
-          <h1 class="goal-title">{{ goals.goal }}</h1>
         </div>
       </div>
     </div>
+
+    <h1 class="goal-title">{{ goals.goal }}</h1>
+    
   </div>
 </section>
 </template>
@@ -69,6 +71,11 @@ img {
   height:         550px;
   margin:         20px;
   border-radius:  10px;
+}
+
+.goal-title {
+  text-align: center;
+  margin: 0 10px;
 }
 
 @media (max-width: 768px) {

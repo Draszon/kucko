@@ -78,7 +78,11 @@ export default {
 
 .index-logo { width: 300px; }
 
-.title { margin: 30px 20px; }
+.title {
+  margin: 30px 20px;
+  font-size: 62px !important;
+  text-align: center;
+}
 
 .slogans-wrapper {
   width:            100%;
@@ -87,17 +91,25 @@ export default {
   justify-content: space-evenly;
 }
 
-.slogan img { width: 190px; }
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan img { width: 100px; }
 
 .slogan-title { text-align: center; }
 
 @media (max-width: 768px) {
-  .slogan img { width: 100px; }
+  .slogan img { width: 80px; }
+  .title { font-size: 50px !important; }
 }
 
 @media (max-width: 425px) {
   .slogans-wrapper { flex-direction: row; }
-  .slogan img { width: 90px; }
+  .slogan img { width: 60px; }
   .index-logo { width: 300px; }
+  .title { font-size: 40px !important; }
 }
 </style>
